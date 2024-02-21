@@ -1,0 +1,89 @@
+/* fonts used  
+for header and nav links : Inrial Sans 
+for paragraphs and others: Jeju Gothic */
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face {
+    font-family: 'JejuGothic';
+    src: url('/fonts/jejugothic/JejuGothic-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+/* for nav links */
+header > ul > li{
+    font-size: 20px;
+    /* font-weight: bold; */
+    list-style: none;
+    display: inline;
+    margin: 3em;
+}
+/* for headers  */
+h1, h2, h3, header > ul > li{
+    font-family: "Inria Sans", sans-serif;
+}
+h1{
+    font-size: 38px;
+   
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 28px;
+}
+/* for paragraphs */
+p{
+    font-family: JejuGothi, 'sans-serif';
+}
+p{
+    font-size: 18px;
+}
+
+footer p{
+    /* if the footer need smaller texts tehn this size will be used */
+    /* font-size: 14px; */ 
+}
+
+/* for mobile responsiveness */
+@media only screen and (min-width: 576px) {
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 27px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+    }
+    footer{
+        /* h1, h2 and h3 and p will be the same sizes and other size that needs to be small will be used the font size of below stated px:  */
+        font-size: 10px;
+    }
+}
+
+/* for tablet responsiveness  */
+@media only screen and (min-width: 768px) {
+    h1{
+        font-size: 34px;
+
+    }
+    h2{
+        font-size: 29px;
+    }
+
+    h3{
+        font-size: 27px;
+    }
+    p{
+        font-size: 16px;
+    }
+    footer p{
+        /* if the footer need smaller texts tehn this size will be used */
+    /* font-size: 12px; */ 
+    }
+}
